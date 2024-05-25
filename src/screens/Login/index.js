@@ -15,6 +15,7 @@ import { auth } from "../../services/firebaseConnection";
 import { getDatabase, ref, set } from "firebase/database";
 import { TextInput } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
+import { StatusBar } from "expo-status-bar";
 
 const Login = () => {
   const [type, setType] = useState(1); //1 signIn 2 signUp
@@ -159,6 +160,7 @@ const Login = () => {
 
   return (
     <S.ViewContainer>
+      <StatusBar style="light" backgroundColor="rgb(10, 2, 29)" />
       {type === 1 ? (
         <S.Container>
           <S.ViewHeader>
