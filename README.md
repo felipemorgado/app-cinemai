@@ -85,8 +85,26 @@ npx expo start
 ## Demonstração
 
 <div style="display: flex; flex-wrap: wrap;">
-  <p>1.</p>
   <img src="examples/cinemai.png" alt="Tela Home">
-  <p>2.</p>
   <img src="examples/cinemai2.png" alt="Tela de pesquisa">
 </div>
+<br>
+
+Na página inicial, exibe as principais seções do aplicativo, como &quot;Tendências&quot;,
+&quot;Filmes Mais Populares&quot; e &quot;Séries Mais Populares&quot;, foi utilizado a API do TMDB para obter os dados.
+
+A página de mídia exibe informações detalhadas sobre um filme ou série, como sinopse, elenco, gênero e avaliações. Permitindo ao usuário adicionar o
+filme/série à sua lista de favoritos ou à sua watchlist.
+
+Na página ator, apresenta informações sobre um ator específico, como biografia,
+filmografia e fotos. Permitindo ao usuário adicionar o ator à sua lista de favoritos.
+
+Já na página de busca, permite ao usuário pesquisar por filmes, séries e atores, foi utilizado a API do TMDB para realizar a busca.
+
+A página perfil do usuário que permite o usuário configurar suas preferências de
+gênero e atores favoritos, além de visualizar seu histórico de filmes assistidos. Os dados
+são armazenados no Firebase Realtime Database.
+
+Por fim na página de recomendações, analisa as preferências do usuário, como gêneros
+e atores favoritos, utilizando o modelo de linguagem Gemini para gerar sugestões de
+filmes e séries.
