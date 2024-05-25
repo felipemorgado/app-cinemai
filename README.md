@@ -36,6 +36,8 @@ CinemAI é um aplicativo React Native desenvolvido com Expo, que permite aos usu
 
 **Pegando as API KEYs:**
 
+(_Se você não deseja pegar as API KEY e só rodar o aplicativo vá para [Executando o .apk de desenvolvimento](#executando-o-apk-de-desenvolvimento)_)
+
 Com o node, expo cli e as dependências instaladas, basta abrir a pasta do projeto no VSCode e criar o arquivo `.env.local`. Nesse arquivo você vai colocar as API Key do Firebase, TMDB e do Gemini, igual demostrado no arquivo ja existente `.env.template`.
 
 - Firebase: entre no [site](https://firebase.google.com/?hl=pt) > go to console > criar um projeto > coloque o nome do seu proejto e espere o projeto ser criado > na parte "Comece adicionando o Firebase ao seu aplicativo" escolha Web > coloque o nome > Registrar App > Agora você terá o firebase config para colocar dentro da `.env.local`
@@ -67,19 +69,25 @@ npx expo start
 ## Executando o .apk de desenvolvimento
 
 Se você não deseja pegar nenhuma API KEY e apenas rodar o aplicativo(em modo de desenvolvimento) leia atentamente a baixo.
-A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os [requisitos](#instalação-e-execução), clonar o repositório(e instalar as dependencias) e rodar dentro da pasta do projeto os seguintes comandos:
+A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os **[requisitos](#instalação-e-execução)**, **clonar o repositório(e instalar as dependencias)** e rodar dentro da pasta do projeto os seguintes **comandos**:
 
 ```bash
+# Com a escolha do dispositivo e o Expo Go instalado, rode esse comnando,
+# para limpar o cache do expo por causa das alterações feitas na .env.local
+# (rode os comandos na pasta do projeto 'ex: G:\ReactNativeProjects\app-cinemai')
 npx expo start --clear
-npx expo start
 
-# obs: se você utiliza internet cabeada no PC e por acaso não conseguiu rodar o aplicativo
-# no celular, utilize esse comando npx expo start --tunnel.
+# após o comando terminar, você pode parar o servidor apertando CTRL + C
+# Agora pode usar esse comando sem o sufixo --clear
+npx expo start
 
 # Após aparecer opções para pressionar no conosle,
 # basta pressionar a tecla "A"  para rodar o aplicativo no dispositivo
 # ou pressionar SHIFT + A se estiver usando mais de 1 dispositivo.
 # Pronto agora basta esperar o aplicativo buildar!
+
+# (obs: se você utiliza internet cabeada no PC e por acaso não conseguiu rodar o aplicativo
+# no celular, utilize esse comando 'npx expo start --tunnel').
 ```
 
 ## Demonstração
