@@ -82,7 +82,7 @@ npx expo start --clear
 # no celular, utilize esse comando 'npx expo start --tunnel').
 ```
 
-Após concluir o `npx expo start --clear` aperte CTRL + C para parar o servidor, agora instale o aplicativo no seu dispositivo, rode o comando `npx expo start` novamente e aguarde na tela aonde aparece para pressionar as opções do expo e pronto ja pode abrir o aplicativo!
+Após concluir o `npx expo start --clear` aperte CTRL + C para parar o servidor, agora [instale o aplicativo](https://github.com/felipemorgado/app-cinemai/releases/tag/v1.0.0) no seu dispositivo, rode o comando `npx expo start` novamente e aguarde na tela aonde aparece para pressionar as opções do expo e pronto ja pode abrir o aplicativo!
 
 ## Demonstração
 
