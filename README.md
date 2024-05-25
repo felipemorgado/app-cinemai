@@ -84,9 +84,15 @@ npx expo start
 
 ## Demonstração
 
-**Home:**
-
-<div style="display: flex">
-  <img src="examples/home.png" alt="Tela Home" width="300">
-  <img src="examples/home.png" alt="Tela Home" width="300">
+<div style="display: flex; flex-wrap: wrap;">
+  <p>1.</p>
+  <img src="examples/home.png" alt="Tela Home" width="325">
+  <p>2.</p>
+  <img src="examples/searchpage.png" alt="Tela de pesquisa" width="325">
+  <p>3.</p>
+  <img src="examples/profile.png" alt="Tela de profile" width="325">
+  <p>4.</p>
+  <img src="examples/mediapage.png" alt="Tela de atores" width="325">
+  <p>5.</p>
+  <img src="examples/actorspage.png" alt="Tela de atores" width="325">
 </div>
