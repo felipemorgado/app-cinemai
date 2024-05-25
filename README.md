@@ -86,13 +86,7 @@ npx expo start
 
 <div style="display: flex; flex-wrap: wrap;">
   <p>1.</p>
-  <img src="examples/home.png" alt="Tela Home" width="300">
+  <img src="examples/cinemai.png" alt="Tela Home">
   <p>2.</p>
-  <img src="examples/searchpage.png" alt="Tela de pesquisa" width="300">
-  <p>3.</p>
-  <img src="examples/profile.png" alt="Tela de profile" width="300">
-  <p>4.</p>
-  <img src="examples/mediapage.png" alt="Tela de atores" width="300">
-  <p>5.</p>
-  <img src="examples/actorspage.png" alt="Tela de atores" width="300">
+  <img src="examples/cinemai2.png" alt="Tela de pesquisa">
 </div>
