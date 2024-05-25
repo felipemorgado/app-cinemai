@@ -68,7 +68,7 @@ npx expo start
 
 ## Executando o .apk de desenvolvimento
 
-Se você não deseja pegar nenhuma API KEY e apenas rodar o aplicativo(em modo de desenvolvimento) leia atentamente a baixo.
+Se você não deseja pegar nenhuma API KEY e apenas rodar o aplicativo(em modo de desenvolvimento) leia atentamente.
 A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os **[requisitos](#instalação-e-execução)**, **clonar o repositório(e instalar as dependencias)** e rodar dentro da pasta do projeto os seguintes **comandos**:
 
 ```bash
@@ -76,19 +76,13 @@ A build que temos do aplicativo é de desenvolvimento, então você obrigatoriam
 # para limpar o cache do expo por causa das alterações feitas na .env.local
 # (rode os comandos na pasta do projeto 'ex: G:\ReactNativeProjects\app-cinemai')
 npx expo start --clear
-
 # após o comando terminar, você pode parar o servidor apertando CTRL + C
-# Agora pode usar esse comando sem o sufixo --clear
-npx expo start
-
-# Após aparecer opções para pressionar no conosle,
-# basta pressionar a tecla "A"  para rodar o aplicativo no dispositivo
-# ou pressionar SHIFT + A se estiver usando mais de 1 dispositivo.
-# Pronto agora basta esperar o aplicativo buildar!
 
 # (obs: se você utiliza internet cabeada no PC e por acaso não conseguiu rodar o aplicativo
 # no celular, utilize esse comando 'npx expo start --tunnel').
 ```
+
+Após concluir o `npx expo start --clear` aperte CTRL + C para parar o servidor, agora instale o aplicativo no seu dispositivo, rode o comando `npx expo start` novamente e aguarde na tela aonde aparece para pressionar as opções do expo e pronto ja pode abrir o aplicativo!
 
 ## Demonstração
 
@@ -113,6 +107,6 @@ A página perfil do usuário que permite o usuário configurar suas preferência
 gênero e atores favoritos, além de visualizar seu histórico de filmes assistidos. Os dados
 são armazenados no Firebase Realtime Database.
 
-Por fim na página de recomendações, analisa as preferências do usuário, como gêneros
+Por fim na página de recomendações com o estilo de cards aonde você pode arrasta para os lados na temática do tinder, analisa as preferências do usuário, como gêneros
 e atores favoritos, utilizando o modelo de linguagem Gemini para gerar sugestões de
 filmes e séries.
