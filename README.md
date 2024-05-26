@@ -71,7 +71,9 @@ npx expo start
 ## Executando o .apk de desenvolvimento
 
 Se você não deseja pegar nenhuma API KEY e apenas rodar o aplicativo(em modo de desenvolvimento) leia atentamente.
-A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os **[requisitos](#instalação-e-execução)**, **clonar o repositório(e instalar as dependencias)**, instalar o [expo go](https://docs.expo.dev/get-started/set-up-your-environment/) no dispostivo e rodar dentro da pasta do projeto os seguintes **comandos**:
+A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os **[requisitos](#instalação-e-execução)**, **clonar o repositório(e instalar as dependencias)**, instalar o [expo go](https://docs.expo.dev/get-started/set-up-your-environment/) no dispostivo.
+
+Agora [instale o aplicativo](https://github.com/felipemorgado/app-cinemai/releases/tag/v1.0.0) no seu dispositivo e rode dentro da pasta do projeto os seguintes **comandos**:
 
 ```bash
 # Com a escolha do dispositivo e o Expo Go instalado, rode esse comnando,
@@ -84,7 +86,7 @@ npx expo start --clear
 # no celular, utilize esse comando 'npx expo start --tunnel').
 ```
 
-Após concluir o `npx expo start --clear` aperte CTRL + C para parar o servidor, agora [instale o aplicativo](https://github.com/felipemorgado/app-cinemai/releases/tag/v1.0.0) no seu dispositivo, rode o comando `npx expo start` novamente e aguarde na tela aonde aparece para pressionar as opções do expo e pronto ja pode abrir o aplicativo!
+Após concluir o `npx expo start --clear` aperte CTRL + C para parar o servidor, agora rode o comando `npx expo start` novamente e aguarde na tela aonde aparece para pressionar as opções do expo e abra o aplicativo!
 
 ## Demonstração
 
