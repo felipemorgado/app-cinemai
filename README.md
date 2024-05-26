@@ -36,6 +36,7 @@ CinemAI é um aplicativo React Native desenvolvido com Expo, que permite aos usu
 
 **Pegando as API KEYs:**
 
+**OBS: PARA A ENTREGA DO TCC GERAMOS NOVAS KEYS, ENTÃO NÃO SERÁ PRECISO FAZER ESSA ETAPA, SIGA PARA [Executando o .apk de desenvolvimento](#executando-o-apk-de-desenvolvimento)**
 (_Se você não deseja pegar as API KEY e só rodar o aplicativo vá para [Executando o .apk de desenvolvimento](#executando-o-apk-de-desenvolvimento)_)
 
 Com o node, expo cli e as dependências instaladas, basta abrir a pasta do projeto no VSCode e criar o arquivo `.env.local`. Nesse arquivo você vai colocar as API Key do Firebase, TMDB e do Gemini, igual demostrado no arquivo ja existente `.env.template`.
@@ -69,7 +70,7 @@ npx expo start
 ## Executando o .apk de desenvolvimento
 
 Se você não deseja pegar nenhuma API KEY e apenas rodar o aplicativo(em modo de desenvolvimento) leia atentamente.
-A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os **[requisitos](#instalação-e-execução)**, **clonar o repositório(e instalar as dependencias)** e rodar dentro da pasta do projeto os seguintes **comandos**:
+A build que temos do aplicativo é de desenvolvimento, então você obrigatoriamente precisa ter instalado os **[requisitos](#instalação-e-execução)**, **clonar o repositório(e instalar as dependencias)**, instalar o [expo go](https://docs.expo.dev/get-started/set-up-your-environment/) no dispostivo e rodar dentro da pasta do projeto os seguintes **comandos**:
 
 ```bash
 # Com a escolha do dispositivo e o Expo Go instalado, rode esse comnando,
