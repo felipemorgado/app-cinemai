@@ -5,23 +5,14 @@ import { getAuth, EmailAuthProvider } from "firebase/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { getReactNativePersistence, initializeAuth } from "firebase/auth";
 
-import {
-  API_KEY,
-  AUTH_DOMAIN,
-  PROJECT_ID,
-  STORAGE_BUCKET,
-  MESSAGIN_SENDER_ID,
-  APP_ID,
-} from "@env";
-
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: API_KEY,
-  authDomain: AUTH_DOMAIN,
-  projectId: PROJECT_ID,
-  storageBucket: STORAGE_BUCKET,
-  messagingSenderId: MESSAGIN_SENDER_ID,
-  appId: APP_ID,
+  apiKey: "AIzaSyBs2R68Yxa88iDIpWhTnz7Ho4Ml4aOEt_g",
+  authDomain: "app-filmes-test-73c7a.firebaseapp.com",
+  projectId: "app-filmes-test-73c7a",
+  storageBucket: "app-filmes-test-73c7a.appspot.com",
+  messagingSenderId: "367808959131",
+  appId: "1:367808959131:web:a551a84de4689750882c3e",
 };
 
 // Initialize Firebase

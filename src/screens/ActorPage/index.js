@@ -32,18 +32,18 @@ const ActorPage = ({ route, navigation }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/search/person?api_key=${API_KEY_TMDB}&query=${actorId}&language=pt-BR`
+          `https://api.themoviedb.org/3/search/person?api_key=0d07f319cd1283cd8c7123ff6731a97a&query=${actorId}&language=pt-BR`
         );
         const actor = response.data.results[0];
 
         // Buscar detalhes do ator em português ou inglês
         let detailsResponse = await axios.get(
-          `https://api.themoviedb.org/3/person/${actorId}?api_key=${API_KEY_TMDB}&language=pt-BR`
+          `https://api.themoviedb.org/3/person/${actorId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR`
         );
 
         if (!detailsResponse.data.biography) {
           detailsResponse = await axios.get(
-            `https://api.themoviedb.org/3/person/${actorId}?api_key=${API_KEY_TMDB}&language=en-US`
+            `https://api.themoviedb.org/3/person/${actorId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=en-US`
           );
         }
 
@@ -51,7 +51,7 @@ const ActorPage = ({ route, navigation }) => {
 
         // Buscar créditos do ator
         const creditsResponse = await axios.get(
-          `https://api.themoviedb.org/3/person/${actorId}/combined_credits?api_key=${API_KEY_TMDB}&language=pt-BR`
+          `https://api.themoviedb.org/3/person/${actorId}/combined_credits?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR`
         );
         setKnownFor(creditsResponse.data.cast.slice(0, 8));
 
@@ -175,7 +175,7 @@ const ActorPage = ({ route, navigation }) => {
     axios
       .get(url, {
         params: {
-          api_key: API_KEY_TMDB,
+          api_key: "0d07f319cd1283cd8c7123ff6731a97a",
         },
       })
       .then((response) => {
@@ -183,7 +183,7 @@ const ActorPage = ({ route, navigation }) => {
         axios
           .get("https://api.themoviedb.org/3/genre/movie/list", {
             params: {
-              api_key: API_KEY_TMDB,
+              api_key: "0d07f319cd1283cd8c7123ff6731a97a",
               language: "pt-BR",
             },
           })
@@ -196,7 +196,7 @@ const ActorPage = ({ route, navigation }) => {
             axios
               .get("https://api.themoviedb.org/3/genre/tv/list", {
                 params: {
-                  api_key: API_KEY_TMDB,
+                  api_key: "0d07f319cd1283cd8c7123ff6731a97a",
                   language: "pt-BR",
                 },
               })

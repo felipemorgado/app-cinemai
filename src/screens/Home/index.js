@@ -79,20 +79,20 @@ const Home = ({ navigation }) => {
     apiCalls.push(
       axios.get("https://api.themoviedb.org/3/genre/movie/list", {
         params: {
-          api_key: API_KEY_TMDB,
+          api_key: "0d07f319cd1283cd8c7123ff6731a97a",
           language: "pt-BR",
         },
       }),
       axios.get("https://api.themoviedb.org/3/trending/all/day", {
         params: {
-          api_key: API_KEY_TMDB,
+          api_key: "0d07f319cd1283cd8c7123ff6731a97a",
           language: "pt-BR",
           page: trendingPage,
         },
       }),
       axios.get("https://api.themoviedb.org/3/discover/movie", {
         params: {
-          api_key: API_KEY_TMDB,
+          api_key: "0d07f319cd1283cd8c7123ff6731a97a",
           language: "pt-BR",
           sort_by: "popularity.desc",
           page: popularMoviesPage,
@@ -100,7 +100,7 @@ const Home = ({ navigation }) => {
       }),
       axios.get("https://api.themoviedb.org/3/discover/tv", {
         params: {
-          api_key: API_KEY_TMDB,
+          api_key: "0d07f319cd1283cd8c7123ff6731a97a",
           language: "pt-BR",
           sort_by: "popularity.desc",
           page: popularSeriesPage,
@@ -180,7 +180,7 @@ const Home = ({ navigation }) => {
               `https://api.themoviedb.org/3/${mediaType}/${itemId}`,
               {
                 params: {
-                  api_key: API_KEY_TMDB,
+                  api_key: "0d07f319cd1283cd8c7123ff6731a97a",
                   language: "pt-BR",
                 },
               }
@@ -191,7 +191,7 @@ const Home = ({ navigation }) => {
               `https://api.themoviedb.org/3/${mediaType}/${itemId}/credits`,
               {
                 params: {
-                  api_key: API_KEY_TMDB,
+                  api_key: "0d07f319cd1283cd8c7123ff6731a97a",
                 },
               }
             );
@@ -246,7 +246,7 @@ const Home = ({ navigation }) => {
                   `https://api.themoviedb.org/3/${item.media_type}/${item.id}/credits`,
                   {
                     params: {
-                      api_key: API_KEY_TMDB,
+                      api_key: "0d07f319cd1283cd8c7123ff6731a97a",
                     },
                   }
                 )

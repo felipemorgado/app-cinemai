@@ -66,11 +66,11 @@ const Profile = () => {
               // Buscar os detalhes do filme/série com o ID:
               if (mediaData[mediaId] === "movie") {
                 mediaDetailsResponse = await axios.get(
-                  `https://api.themoviedb.org/3/movie/${mediaId}?api_key=${API_KEY_TMDB}&language=pt-BR`
+                  `https://api.themoviedb.org/3/movie/${mediaId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR`
                 );
               } else if (mediaData[mediaId] === "tv") {
                 mediaDetailsResponse = await axios.get(
-                  `https://api.themoviedb.org/3/tv/${mediaId}?api_key=${API_KEY_TMDB}&language=pt-BR`
+                  `https://api.themoviedb.org/3/tv/${mediaId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR`
                 );
               }
               // Verificar se a resposta foi bem-sucedida
@@ -108,7 +108,7 @@ const Profile = () => {
 
   async function fetchActorDetails(actorId) {
     const response = await axios.get(
-      `https://api.themoviedb.org/3/person/${actorId}?api_key=${API_KEY_TMDB}`
+      `https://api.themoviedb.org/3/person/${actorId}?api_key=0d07f319cd1283cd8c7123ff6731a97a`
     );
     return response.data;
   }

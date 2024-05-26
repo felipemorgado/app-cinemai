@@ -79,7 +79,7 @@ const ListIA = () => {
 
   async function getRecommendations(media, watchlist, genres, type) {
     // Adiciona watchlist como parâmetro
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY_GEMINI}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyAt8zJUMTG7h1IqVCmc9TwpFLDLhmmEHR8`;
 
     // Crie uma string com os filmes e séries da watchlist
     const watchlistString =
@@ -156,7 +156,7 @@ const ListIA = () => {
     //   return; // Título já existe, não adiciona
     // }
 
-    const url = `https://api.themoviedb.org/3/search/multi?api_key=${API_KEY_TMDB}&language=pt-BR&query=${encodeURIComponent(
+    const url = `https://api.themoviedb.org/3/search/multi?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR&query=${encodeURIComponent(
       title
     )}`;
     // console.log("URL de pesquisa TMDB:", url);
@@ -203,7 +203,7 @@ const ListIA = () => {
   }
 
   async function getMediaDetails(mediaId, mediaType) {
-    const url = `https://api.themoviedb.org/3/${mediaType}/${mediaId}?api_key=${API_KEY_TMDB}&language=pt-BR&append_to_response=credits`;
+    const url = `https://api.themoviedb.org/3/${mediaType}/${mediaId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR&append_to_response=credits`;
     try {
       const response = await axios.get(url);
       // Verifica se a resposta contém um poster

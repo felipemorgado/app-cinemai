@@ -35,7 +35,7 @@ const ModalActor = ({ visible, onClose }) => {
               `https://api.themoviedb.org/3/person/${actorId}`,
               {
                 params: {
-                  api_key: API_KEY_TMDB,
+                  api_key: "0d07f319cd1283cd8c7123ff6731a97a",
                   language: "pt-BR",
                 },
               }

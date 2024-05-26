@@ -37,7 +37,7 @@ const SearchPage = ({ navigation }) => {
       axios
         .get("https://api.themoviedb.org/3/search/multi", {
           params: {
-            api_key: API_KEY_TMDB,
+            api_key: "0d07f319cd1283cd8c7123ff6731a97a",
             language: "pt-BR",
             query: debouncedSearchTerm,
           },
@@ -61,7 +61,7 @@ const SearchPage = ({ navigation }) => {
     axios
       .get(url, {
         params: {
-          api_key: API_KEY_TMDB,
+          api_key: "0d07f319cd1283cd8c7123ff6731a97a",
         },
       })
       .then((response) => {
@@ -71,7 +71,7 @@ const SearchPage = ({ navigation }) => {
         axios
           .get("https://api.themoviedb.org/3/genre/movie/list", {
             params: {
-              api_key: API_KEY_TMDB,
+              api_key: "0d07f319cd1283cd8c7123ff6731a97a",
               language: "pt-BR",
             },
           })
@@ -85,7 +85,7 @@ const SearchPage = ({ navigation }) => {
             axios
               .get("https://api.themoviedb.org/3/genre/tv/list", {
                 params: {
-                  api_key: API_KEY_TMDB,
+                  api_key: "0d07f319cd1283cd8c7123ff6731a97a",
                   language: "pt-BR",
                 },
               })

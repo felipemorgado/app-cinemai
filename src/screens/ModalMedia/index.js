@@ -27,11 +27,11 @@ const ModalMedia = ({ visible, onClose }) => {
             // Busca detalhes do conteúdo
             if (mediaData[mediaId] === "movie") {
               mediaDetailsResponse = await axios.get(
-                `https://api.themoviedb.org/3/movie/${mediaId}?api_key=${API_KEY_TMDB}&language=pt-BR`
+                `https://api.themoviedb.org/3/movie/${mediaId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR`
               );
             } else if (mediaData[mediaId] === "tv") {
               mediaDetailsResponse = await axios.get(
-                `https://api.themoviedb.org/3/tv/${mediaId}?api_key=${API_KEY_TMDB}&language=pt-BR`
+                `https://api.themoviedb.org/3/tv/${mediaId}?api_key=0d07f319cd1283cd8c7123ff6731a97a&language=pt-BR`
               );
             }
 
@@ -40,7 +40,7 @@ const ModalMedia = ({ visible, onClose }) => {
               // Busca os créditos
               try {
                 const creditsResponse = await axios.get(
-                  `https://api.themoviedb.org/3/${mediaData[mediaId]}/${mediaId}/credits?api_key=${API_KEY_TMDB}`
+                  `https://api.themoviedb.org/3/${mediaData[mediaId]}/${mediaId}/credits?api_key=0d07f319cd1283cd8c7123ff6731a97a`
                 );
 
                 return {
