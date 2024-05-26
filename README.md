@@ -36,7 +36,7 @@ CinemAI é um aplicativo React Native desenvolvido com Expo, que permite aos usu
 
 **Pegando as API KEYs:**
 
-**OBS: PARA A ENTREGA DO TCC GERAMOS NOVAS KEYS, ENTÃO NÃO SERÁ PRECISO FAZER ESSA ETAPA, SIGA PARA [Executando o .apk de desenvolvimento](#executando-o-apk-de-desenvolvimento)**
+## OBS: PARA A ENTREGA DO TCC GERAMOS NOVAS KEYS, ENTÃO NÃO SERÁ PRECISO FAZER ESSA ETAPA, SIGA PARA [Executando o .apk de desenvolvimento](#executando-o-apk-de-desenvolvimento)
 
 (_Se você não deseja pegar as API KEY e só rodar o aplicativo vá para [Executando o .apk de desenvolvimento](#executando-o-apk-de-desenvolvimento)_)
 
